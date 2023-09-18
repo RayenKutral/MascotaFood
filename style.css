@@ -8,19 +8,21 @@ header{
     justify-content: center;
 }
 
-nav{
-  align-items: center;
-  display: flex;  
-  justify-content: center;
+.navegacion ul {
+  list-style: none;
 }
 
-section{
+.menu{
     padding: 2vw;    
     display: flex;
    justify-content: space-evenly;
 }
-
-a{
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;    
     padding: 5px;
     margin-right: 2vw;
     margin-left: 2vw;
@@ -33,6 +35,42 @@ a{
     transition: all 0.3s ease;    
     position: relative;
     overflow: hidden;
+}
+.submenu {
+    position: absolute;
+    border-radius: 5%;
+    background-color: rgba(107, 107, 107, 0.541);
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.subsubmenu {
+    position: absolute;
+    background-color: rgba(107, 107, 107, 0.541);
+    border-radius: 5%;
+    visibility: hidden;    
+    opacity: 0;
+    transition: opacity 1s;  
+    margin-left: 175px;
+    margin-top: -48px;
+}
+
+.subsubmenu > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    
+}
+
+.submenu > li > a {
+    display: block;    
+    padding: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
 }
 
 a::before{
@@ -55,11 +93,11 @@ img{
     padding: 10px;
    }
 
-   @media (max-width: 365px){
-
-      header{
-        display: flex;
-        justify-content: left;
-       }
-
+   .menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+   }
+   .submenu li:hover .subsubmenu {
+    visibility: visible;
+    opacity: 1;
    }
