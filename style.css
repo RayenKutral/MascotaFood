@@ -8,11 +8,25 @@
 
 header{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
+.container{
+    position: absolute;
+    left: 28%;
+    top: 7%;
+}
+input{
+outline: none;
+width: 35vw;
+height: 2.5vw;
+border: #940303 2px solid;
+border-radius: 50px;
+}
 
+::placeholder{
+    padding: 10px;
+    color: gray;
+}
 
 .navegacion ul {
   list-style: none;
@@ -97,9 +111,12 @@ a:hover::before {
 }
 
 img{
-    height: 10vw;
+    height: 8vw;
     padding: 10px;
-
+    transition: 0.5s;
+   }
+   img:hover {
+    height: 9vw;
    }
 
    .menu li:hover .submenu {
@@ -116,7 +133,14 @@ img{
 
 
    @media screen and (max-width: 768px) {
-    .menu {
+    img{
+        height: 15vw;
+       }
+       img:hover{
+        height: 15vw;
+       }
+    
+        .menu {
         display: block;
         flex-direction: column;
         background-color: #940303;
