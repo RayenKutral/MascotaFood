@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     -moz-box-sizing: border-box;
@@ -6,141 +6,229 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
-.container{
-    position: absolute;
-    left: 28%;
-    top: 7%;
-}
-input{
-outline: none;
-width: 35vw;
-height: 2.5vw;
-border: #940303 2px solid;
-border-radius: 50px;
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0%;
 }
 
-::placeholder{
+img {
+    height: 8vw;
+    margin-top: 0.5vw;
     padding: 10px;
+    transition: 0.8s;
+}
+img:hover {
+    height: 8.4vw;
+}
+
+#buscador {
+    position: static;
+    outline: none;
+    margin-left: 4vw;
+    width: 35vw;
+    height: 2.5vw;
+    border: #94030362 2px solid;
+    border-radius: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+
+::placeholder {
+    padding: 3px;
     color: gray;
 }
 
 .navegacion ul {
-  list-style: none;
+    list-style: none;
 }
 
-.menu{
-    padding: 2vw;    
+
+/* Menú */
+.menu {
+    padding-top: 2vw;
     display: flex;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
 }
-.menu > li {
+.menu>li {
     position: relative;
     display: inline-block;
 }
-.menu > li > a {
-    display: block;    
+.menu>li>a {
+    display: block;
     padding: 5px;
     margin-right: 2vw;
     margin-left: 2vw;
+    margin-bottom: 0.5vw;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 1.2vw;    
+    font-size: 1.2vw;
     border-radius: 20px;
     color: #065581;
-    transition: all 0.3s ease;    
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+/* Fin de código Menú */
+
+
+/* SubMenú */
 .submenu {
     position: absolute;
     border-radius: 5%;
     background-color: rgba(107, 107, 107, 0.842);
-    width: 120%;
+    width: 110%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
     z-index: 1000;
 }
-.subsubmenu {
-    position: absolute;
-    background-color: rgba(107, 107, 107, 0.795);
-    border-radius: 5%;
-    visibility: hidden;    
-    opacity: 0;
-    transition: opacity 1s;  
-    margin-left: 175px;
-    margin-top: -48px;
-    z-index: 1000;
-}
-
-.subsubmenu > li > a {
+.submenu>li>a {
     display: block;
     padding: 15px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    
 }
+.submenu li:hover .subsubmenu {
+    visibility: visible;
+    opacity: 1;
+}
+/* Fin de código SubMenú */
 
-.submenu > li > a {
-    display: block;    
+
+/* SubSubMenú */
+.subsubmenu {
+    position: absolute;
+    background-color: rgba(107, 107, 107, 0.795);
+    border-radius: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    left: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+.subsubmenu>li>a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+
+}
+/* Fin de código SubSubMenú */
+
+
+/* MenúPerros */
+.menuPerros {
+    position: absolute;
+    background-color: rgba(107, 107, 107, 0.795);
+    border-radius: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    left: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+.menuPerros>li>a {
+    display: block;
     padding: 15px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
+#Perros:hover .menuPerros {
+    visibility: visible;
+    opacity: 1;
+}
+/* Fin de código MenúPerros */
 
-a::before{
-    content: '';
+
+/* MenúGatos */
+.menuGatos {
     position: absolute;
-    width: 0;
+    background-color: rgba(107, 107, 107, 0.795);
+    border-radius: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    left: 100%;
+    top: 50%;
+    z-index: 1000;
+}
+.menuGatos>li>a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+#Gatos:hover .menuGatos {
+    visibility: visible;
+    opacity: 1;
+}
+/* Fin de código MenúGatos */
+
+.menu>li>a,
+.submenu>li>a,
+.subsubmenu>li>a,
+.menuPerros>li>a,
+.menuGatos>li>a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu>li>a::after,
+.submenu>li>a::after,
+.subsubmenu>li>a::after,
+.menuPerros>li>a::after,
+.menuGatos>li>a::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: -2px;
+    width: 70%;
     height: 2px;
-    bottom: 0;
-    left: 0; 
     background-color: #c50000;
-    transition: width 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
-a:hover::before {
-    width: 100%; 
+.menu>li>a:hover::after,
+.submenu>li>a:hover::after,
+.subsubmenu>li>a:hover::after,
+.menuPerros>li>a:hover::after,
+.menuGatos>li>a:hover::after {
+    transform: scaleX(1);
 }
 
-img{
-    height: 8vw;
-    padding: 10px;
-    transition: 0.5s;
-   }
-   img:hover {
-    height: 9vw;
-   }
-
-   .menu li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-   }
-
-   .submenu li:hover .subsubmenu {
-    visibility: visible;
-    opacity: 1;
-   }
 
 
-
-
-   @media screen and (max-width: 768px) {
-    img{
+@media screen and (max-width: 768px) {
+    img {
         height: 15vw;
-       }
-       img:hover{
+    }
+
+    img:hover {
         height: 15vw;
-       }
-    
-        .menu {
+    }
+
+    .menu {
         display: block;
         flex-direction: column;
         background-color: #940303;
@@ -158,7 +246,7 @@ img{
     .menu li {
         margin: 10px 0;
     }
-   
+
     .nav-toggle {
         display: block;
         cursor: pointer;

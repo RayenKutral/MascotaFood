@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,47 @@
     <script src="main.js"></script>
     <title>Mascota Food</title>
 </head>
+
 <body>
     <header>
-                  <a href="#">
-        <img src="assets\MascotasFood.png" alt= "logo"></a>
-        <div class="container">                        
-            <input type="text" placeholder="Busca tu marca preferida..">            
+        <div class="container">
+            <a href="index.html">
+                <img src="assets\MascotasFood.png" alt="logo"></a>
+            <input id="buscador" type="text" placeholder="Busca tu marca preferida..">
             <div class="btn">
-                <i class="fa fa-search" ></i>
+                <i class="fa fa-search"></i>
             </div>
-        </div>      
-
-         <nav class="navegacion">
-     
-        <ul class="menu" id="menu">
-       <li><a href="">Home</a></li>
-        <li><a href="">Productos</a><span><img src="assets/abajo.png" style="height: 10px; width: 10px;"></span>
-            <ul class="submenu">
-               <li><a>Alimentos secos</a>
-                 <ul class="subsubmenu">
-                <li><a href="">Perros</a></li>
-                <li><a href="">Gatos</a></li>
-                  </ul></li>
-               <li><a href="">Cuidados e higiene</a></li>
-               <li><a href="">Juguetes y camas</a></li>
+        </div>
+        <nav class="navegacion">
+            <ul class="menu" id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="">Alimentos</a>
+                            <ul class="subsubmenu">
+                                <li id="Perros"><a href="">Perros</a>
+                                    <ul class="menuPerros">
+                                        <li><a href="">Secos</a></li>
+                                        <li><a href="">Húmedos</a></li>
+                                    </ul>
+                                </li>
+                                <li id="Gatos"><a href="">Gatos</a>
+                                    <ul class="menuGatos">
+                                        <li><a href="">Secos</a></li>
+                                        <li><a href="">Húmedos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Cuidados e higiene</a></li>
+                        <li><a href="">Juguetes y camas</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Nosotros</a></li>
+                <li><a href="">Contáctanos</a></li>
             </ul>
-        </li>
-        <li> <a href="">Nosotros</a></li>
-            <li><a href="">Contactanos</a></li>
-    </ul>
-    </nav> 
+        </nav>
     </header>
-    
 </body>
+
 </html>
