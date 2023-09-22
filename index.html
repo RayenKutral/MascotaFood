@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <script defer src="index.js"></script>
     <title>Mascota Food</title>
 </head>
 
@@ -15,14 +19,12 @@
     <header>
         <div class="container">
             <a href="index.html">
-                <img src="assets\MascotasFood.png" alt="logo"></a>
+                <img src="assets\MascotasFood.png" alt="logo" class="logo"></a>
             <input id="buscador" type="text" placeholder="Busca tu marca preferida..">
-            <div class="btn">
-                <i class="fa fa-search"></i>
-            </div>
+             <button class="nav-toggle"><i class='bx bx-menu'></i></button>
         </div>
         <nav class="navegacion">
-            <ul class="menu" id="menu">
+            <ul class="menu nav-menu_visible" id="menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">Productos</a>
                     <ul class="submenu">
@@ -50,8 +52,11 @@
                 <li><a href="">Contáctanos</a></li>
             </ul>
         </nav>
+        <section class="banner">
+            <img src="assets/pexels-lumn-406014.jpg" alt="" class="imagenBanner">
+        </section>
     </header>
-    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
