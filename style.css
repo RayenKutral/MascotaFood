@@ -4,6 +4,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #c6e4fc;
 }
 
 header {
@@ -34,7 +35,6 @@ header {
 
    display: none;
 }
-
 #buscador {
     position: static;
     outline: none;
@@ -47,7 +47,6 @@ header {
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
 }
-
 ::placeholder{
     padding: 0.1vw;
     color: gray;
@@ -58,7 +57,6 @@ header {
     background-repeat: no-repeat;
     background-position: right;
 }
-
 .navegacion ul {
     list-style: none;
 }
@@ -75,6 +73,7 @@ header {
     position: relative;
     display: inline-block;
     margin-top: 0.5vw;
+    background-color: #035394;
 }
 .menu>li>a {
     display: block;
@@ -92,10 +91,30 @@ header {
     position: relative;
     overflow: hidden;
     text-align: center;
+    background-color: #035394;
 }
 .menu li:hover .submenu {
     visibility: visible;
     opacity: 1;
+}
+.menu li a {
+    position: relative;
+    text-decoration: none;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: 0px;
+    width: 70%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.menu li a:hover::after {
+    transform: scaleX(1);
 }
 /* Fin de código Menú */
 
@@ -214,35 +233,15 @@ header {
 }
 /* Fin de código MenúGatos */
 
-.menu li a {
-    position: relative;
-    text-decoration: none;
-}
 
-.menu li a::after {
-    content: "";
-    position: absolute;
-    left: 15%;
-    bottom: 0px;
-    width: 70%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-}
 
-.menu li a:hover::after {
-    transform: scaleX(1);
-}
-
-section{
+.banner-slider{
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
 .imagenBanner {
-    width: 40%;       
+    width: 100%;
 }
 
 
@@ -319,7 +318,7 @@ section{
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     
     .menu {
         top: 10vw;
