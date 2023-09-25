@@ -72,8 +72,7 @@ header {
 .menu>li {
     position: relative;
     display: inline-block;
-    margin-top: 0.5vw;
-    background-color: #035394;
+    margin-top: 0.5vw;  
 }
 .menu>li>a {
     display: block;
@@ -97,10 +96,15 @@ header {
     visibility: visible;
     opacity: 1;
 }
-.menu li a {
+.menu a {
     position: relative;
-    text-decoration: none;
+    text-decoration: none;    
+    background-color: #035394;
 }
+.menu li {
+    background-color: #035394;
+}
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -140,6 +144,7 @@ header {
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
+    background-color: #035394;
 }
 .submenu li:hover .subsubmenu {
     visibility: visible;
@@ -151,7 +156,7 @@ header {
 /* SubSubMenú */
 .subsubmenu {
     position: absolute;
-    background-color: #035394;   
+    background-color: #035394;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
@@ -177,7 +182,7 @@ header {
 /* MenúPerros */
 .menuPerros {
     position: absolute;
-    background-color: #035394;   
+    background-color: #035394;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
@@ -207,7 +212,7 @@ header {
 /* MenúGatos */
 .menuGatos {
     position: absolute;
-    background-color:#035394;    
+    background-color: #035394;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
