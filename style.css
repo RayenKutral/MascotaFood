@@ -28,11 +28,10 @@ header {
   color: rgb(8, 85, 156);
    background: none;
    border: none;
-   font-size: 30px;
+   font-size: 5vw;
    padding: 0 20px;
    line-height: 30px;
    cursor: pointer;
-
    display: none;
 }
 #buscador {
@@ -252,16 +251,14 @@ header {
 
 
 @media screen and (max-width: 768px) {
-    .container{
-        justify-content: space-between;
-    }
+   
     .logo {
-        height: 10vw;        
+        height: 14vw;        
         padding: 5px;
     }
 
     .logo:hover {
-        height: 10.5vw;
+        height: 14.5vw;
     }
     
     .nav-toggle{
@@ -270,24 +267,27 @@ header {
 
     .menu {       
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         background-color: #035394;        
         padding: 0;
         position: fixed;
-        top: 90px;      
-        left: 100%;
+        top: 14vw;      
+        right: 100%;
         width: 100%;
         margin: 0;
-        transition: left 0.3s;
+        transition: right 0.3s;
         z-index: 1000;
     }
     .menu > li > a {        
         text-align: center;
-    }
+        }
     .nav-menu_visible {
-        left: 0%;
-        transition: left 0.3s;
-        top: 10vw;
+        right: 0%;
+        transition: right 0.3s;
+        top: 14vw;
+    }
+    .menu> li> a {
+        font-size: 2.5vw;
     }
 
     .submenu {
@@ -295,12 +295,19 @@ header {
       background-color: #035394;
       width: 100%;
       left: 100%;
-      top: -125%;
+      top: -85%;     
+      border-radius: 10%;
     }
+
+    .submenu li a {
+    font-size: 2vw;
+    }
+
     .subsubmenu{
         left: 100%;
         background-color: #035394;
     }
+
     .menuGatos{
         left: 100%;
         background-color: #035394;
@@ -323,12 +330,3 @@ header {
 
 }
 
-@media screen and (max-width: 576px) {
-    
-    .menu {
-        top: 10vw;
-    }
-    .nav-menu_visible{
-        top: 10vw;
-    }
-}
