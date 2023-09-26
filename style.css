@@ -53,8 +53,8 @@ header {
     font-family: "Century Gothic",Verdana,sans-serif;
     background-image: url(assets/search-interface-symbol\ \(1\).png);    
     background-size: 1.2vw 1.2vw;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-repeat: no-repeat;    
+    background-position: 97%;
 }
 .navegacion ul {
     list-style: none;
@@ -298,6 +298,7 @@ header {
       top: -85%;     
       border-radius: 10%;
     }
+  
 
     .submenu li a {
     font-size: 2vw;
