@@ -53,11 +53,12 @@ header {
     color: gray;
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
-    background-image: url(assets/search-interface-symbol\ \(1\).png);    
+    background-image: url(/assets/busqueda.png);   
     background-size: 1.2vw 1.2vw;
     background-repeat: no-repeat;    
     background-position: 97%;
 }
+
 .navegacion ul {
     list-style: none;
 }
