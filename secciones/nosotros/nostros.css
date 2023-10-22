@@ -1,1 +1,11 @@
-    
+* {
+    margin: 0px;
+    padding: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+iframe {
+    position: absolute;
+    z-index: 9999
+}
