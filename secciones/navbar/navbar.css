@@ -15,7 +15,7 @@ header {
 .container {
     display: flex;
     align-items: center;
-    background-color: #7aa2bd
+    background-color: #bbcdda
 }
 
 .logo {
@@ -23,8 +23,7 @@ header {
     margin-top: 0.5vw;
     margin-left: 5vw;
     padding: 10px;
-    transition: 0.8s;
-    filter: drop-shadow(5px 2px 2px lightblue);
+    transition: 0.8s;   
 }
 .nav-toggle {
   color: rgb(8, 85, 156);

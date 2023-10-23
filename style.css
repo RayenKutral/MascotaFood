@@ -5,55 +5,33 @@
 
 
 body{
-    background-color: #7aa2bd
+    background-color: #bbcdda;
+
 }
-
-
-.slider{
+.portada{    
+    background-image: url(assets/Diseño\ sin\ título.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
     display: flex;
-    width: 300%;
-    height: 300px;
-    margin-left: -100%;
+    flex-direction: column;
+    margin: ;
 }
-.slider-container{
-    overflow: hidden;
+h1{
+color: rgb(37, 81, 163);
+font-size: 50px;
+padding: 20px;
+margin: 50px;
 }
-    .slider-img{
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    }   
+h2{
+    padding: 20px;
+    margin-bottom: 100px;
+}
 
-    
-    .slider-btn{
-        position: absolute;
-        width: 2.5vw;
-        height: 2.5vw;
-        background: rgba(255, 255, 255, 0.295);
-        top: 20vw;
-        font-size: 2vw;
-        font-weight: bold;
-        font-family: monospace;
-        text-align: center;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.5s;
-    }
-    
-    .slider-btn:hover{
-        background-color: #ffffff;
-    }
-    
-    .slider-btn-right{
-    right: 10px;
-    }
-    
-    .slider-btn-left{
-    left: 10px;
-    }
-    
-
+p{
+    margin-bottom: 300px;
+}
 @media screen and (max-width: 768px) {
 
 }
