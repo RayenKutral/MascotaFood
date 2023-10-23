@@ -8,7 +8,7 @@
 
 header {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 
@@ -43,7 +43,7 @@ header {
     width: 35vw;
     height: 2.5vw;
     border: #94030362 2px solid;
-    border-radius: 50px;    
+    border-radius: 50px;
     padding: 10px;
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
@@ -53,9 +53,9 @@ header {
     color: gray;
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
-    background-image: url(/assets/busqueda.png);   
+    background-image: url(/assets/busqueda.png);
     background-size: 1.2vw 1.2vw;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-position: 97%;
 }
 
@@ -69,12 +69,12 @@ header {
     padding: 0.5vw;
     display: flex;
     justify-content: space-evenly;
-    background-color: #035394;    
+    background-color: #035394;
 }
 .menu>li {
     position: relative;
     display: inline-block;
-    margin-top: 0.5vw;  
+    margin-top: 0.5vw;
 }
 .menu>li>a {
     display: block;
@@ -92,7 +92,7 @@ header {
     position: relative;
     overflow: hidden;
     text-align: center;
-   
+
 }
 .menu li:hover .submenu {
     visibility: visible;
@@ -100,7 +100,7 @@ header {
 }
 .menu a {
     position: relative;
-    text-decoration: none;    
+    text-decoration: none;
     background-color: transparent;
 }
 .menu li {
@@ -127,7 +127,7 @@ header {
 
 /* SubMenú */
 .submenu {
-    position: absolute;    
+    position: absolute;
     background-color:#035394;
     width: 110%;
     visibility: hidden;
@@ -135,11 +135,12 @@ header {
     transition: opacity 1s;
     z-index: 1000;
 }
+
 .submenu>li>a {
     display: block;
     padding: 0.2vw;
     padding-bottom: 0.5vw;
-    margin: 1.5vw;   
+    margin: 1.5vw;
     color: white;
     font-size: 1vw;
     font-weight: bold;
@@ -164,8 +165,7 @@ header {
     transition: opacity 1s;
     left: 100%;
     top: 0%;
-    z-index: 1000;
-}
+  }
 .subsubmenu>li>a {
     display: block;
     font-size: 1vw;
@@ -190,7 +190,7 @@ header {
     transition: opacity 1s;
     left: 100%;
     top: 0%;
-    z-index: 1000;
+
 }
 .menuPerros>li>a {
     display: block;
@@ -220,7 +220,7 @@ header {
     transition: opacity 1s;
     left: 100%;
     top: 50%;
-    z-index: 1000;
+
 }
 .menuGatos>li>a {
     display: block;
@@ -228,7 +228,7 @@ header {
     font-weight: bold;
     padding: 0.2vw;
     padding-bottom: 0.5vw;
-    margin: 1.5vw;   
+    margin: 1.5vw;
     color: white;
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
@@ -241,49 +241,39 @@ header {
 /* Fin de código MenúGatos */
 
 
-
-.banner-slider{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.imagenBanner {
-    width: 100%;
-}
-
 @media screen and (max-width: 768px) {
-   
+
     .logo {
-        height: 14vw;        
+        height: 14vw;
         padding: 5px;
     }
 
     .logo:hover {
         height: 14.5vw;
     }
-    
+
     .nav-toggle{
-        display: block;            
+        display: block;
     }
 
-    .menu {    
+    .menu {
         flex-direction: column;
         align-items: baseline;
-        background-color: #035394;        
+        background-color: #035394;
         padding: 0;
         position: fixed;
-        top: 14vw;      
+        top: 14vw;
         right: 100%;
         width: 100%;
         margin: 0;
         transition: right 0.3s;
         z-index: 1000;
     }
-    .menu > li > a {        
+    .menu > li > a {
         text-align: center;
         }
 
-    .nav-menu_visible {        
+    .nav-menu_visible {
         right: 0%;
         transition: right 0.3s;
         top: 14vw;
@@ -297,10 +287,10 @@ header {
       background-color: #035394;
       width: 100%;
       left: 100%;
-      top: -85%;     
+      top: -85%;
       border-radius: 10%;
     }
-  
+
 
     .submenu li a {
     font-size: 2vw;
@@ -315,12 +305,12 @@ header {
         left: 100%;
         background-color: #035394;
     }
-    
+
     .menuPerros{
         left: 100%;
         background-color: #035394;
     }
-   
+
     .menuGatos{
         z-index: 1000;
     }
