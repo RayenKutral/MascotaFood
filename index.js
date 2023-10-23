@@ -1,15 +1,12 @@
-const container = document.getElementById('navbar-container');
-const xhr = new XMLHttpRequest();
+fetch('/secciones/navbar/navbar.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('navbar-container').innerHTML = data;
+});
 
-xhr.onreadystatechange = function () {
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    container.innerHTML = xhr.responseText;
-  }
-};
 
-xhr.open('GET', './secciones/navbar/navbar.html', true);
-xhr.send();
 
+//Slider
 const slider= document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length -1] 
@@ -51,3 +48,5 @@ btnLeft.addEventListener('click', () =>{
 setInterval(function(){
     Next();
 }, 5000);
+
+
