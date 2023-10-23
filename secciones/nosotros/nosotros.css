@@ -5,7 +5,3 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;    
 }
-iframe {
-    position: absolute;
-    z-index: 9999
-}

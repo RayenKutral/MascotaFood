@@ -1,3 +1,15 @@
+const container = document.getElementById('navbar-container');
+const xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    container.innerHTML = xhr.responseText;
+  }
+};
+
+xhr.open('GET', './secciones/navbar/navbar.html', true);
+xhr.send();
+
 const slider= document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length -1] 

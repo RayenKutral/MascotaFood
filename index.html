@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>Mascota Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<title>Mascota Food</title>
 </head>
 <body>
 
-    <header>
-        <iframe class="navbar" src="/secciones/navbar/navbar.html"  width="100%" height="60%"></iframe>
-    </header>
+<header>
+        <div id="navbar-container"></div>
+</header>
+ 
+<div class="slider-container">
+  <div class="slider" id="slider">
+    <div class="slider__section">
+<img src="/assets/2310-Website-Banner-Gato-Alimento-Royal-Canin-156288----100119----D.png" class="slider-img">
+  </div>
+  <div class="slider__section">
+<img src="/assets/2310-Website-Banner-Perro-Alimento-Balanced-121094----121123----D.png" class="slider-img">
+  </div>
+  <div class="slider__section">
+<img src="/assets/2310-Website-Banner-Perro-y-Gato-Humedos-Sieger-132171--3x2--132181--3x2--D.png" class="slider-img">
+    </div>  
+  </div>
+  <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
+  <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+</div>
 
-    <div class="slider">
-        <iframe class="slider__s" src="/secciones/slider/slider.html" width="100%" height="100%"></iframe>
-    </div>
+<script src="index.js"></script>
+<script src="/secciones/navbar/navbar.js"></script>
 
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
