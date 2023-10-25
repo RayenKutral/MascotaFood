@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +9,9 @@ body{
     background-color: #bbcdda;
 
 }
+
+/*/ PORTADA /*/
+
 .portada{    
     background-image: url(assets/Diseño\ sin\ título.jpg);
     background-size: 100% auto;
@@ -16,22 +20,43 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: ;
+    justify-content: center;
 }
-h1{
-color: rgb(37, 81, 163);
-font-size: 50px;
-padding: 20px;
-margin: 50px;
-}
-h2{
+.portada h1 {
+    text-align: center;
+    color: rgb(37, 81, 163);
+    font-family: 'Lora', serif;
+    font-size: 55px;
     padding: 20px;
-    margin-bottom: 100px;
+    margin: 5%;
+    margin-top: 5%;
+    width: 70%;
 }
 
-p{
-    margin-bottom: 300px;
+.portada p{
+    width: 52%;
+    margin-bottom: 10%;
+    align-self: left;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: rgb(107, 101, 101);
 }
+.portada h2{
+    width: 52%;
+    margin-bottom: 10%;
+    align-self: left;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: rgb(107, 101, 101);
+}
+
+
 @media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
