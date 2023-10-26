@@ -9,6 +9,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 /* Slider */
@@ -16,8 +17,9 @@ header {
 .slider {
   display: flex;
   width: 300%;
-  height: 300px;
+  height: 180px;
   margin-left: -100%;
+  margin-top: 11.8%;  
 }
 .slider-container {
   overflow: hidden;
@@ -60,13 +62,13 @@ header {
 
 /* Estilos para la sección de la tienda */
 
-img {
+
+.Tienda img {
   max-width: 250px;
   max-height: 250px;
 }
 
-.container-items {
-  padding: 20 0 20 0;
+.container-items { 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -75,12 +77,15 @@ img {
 .container-icon {
   width: 40px;
   height: 40px;
+  margin-right: 5vw;
 }
 
 .header-tienda {
   padding: 10px 0 10px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #bbcdda
 }
 
 .producto {
@@ -88,16 +93,18 @@ img {
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   width: 100%; /* Opcional: para asegurarse de que el contenedor ocupe todo el ancho disponible */
-  height: 300px; /* Cambia la altura según tus necesidades */
+  height: 280px; /* Cambia la altura según tus necesidades */
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 .info-product {
-  padding: 15px 30px;
+  padding: 0px 30px;
   line-height: 2;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: "century gothic", sans-serif;
 }
 
 .producto:hover {
@@ -105,8 +112,6 @@ img {
 }
 
 .producto img {
-  width: 100%;
-  height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   transition: all 0.5s;
@@ -114,10 +119,11 @@ img {
 
 .producto figure {
   overflow: hidden;
+  padding: 2vw;
 }
 
 .producto:hover img {
-  transform: scale(1.2); /* agranda la imagen cuando paso por arriba*/
+  transform: scale(1.1); /* agranda la imagen cuando paso por arriba*/
 }
 
 .price {
@@ -128,24 +134,20 @@ img {
 
 .info-product button {
   border: none;
+  border-radius: 50px;
   background: none;
   background-color: black;
   color: whitesmoke;
   padding: 15px 10px;
   cursor: pointer;
-}
+  width: 10vw;
+  font-family: "century gothic", sans-serif;
+  transition: all 0.4s ease;
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #035394;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 5 0 5 0;
+}
+.info-product button:hover{
+    background-color: rgba(90, 88, 88, 0.822);
+    color: black;
 }
 
 .social-icons {
@@ -157,13 +159,11 @@ img {
   margin: 0 10px; /* Espacio entre los iconos */
 }
 
-.Tienda {
-  padding: 0 0 50px 0;
-  margin: 50px 10px 10px 10px;
-}
+
 
 .titulo-tienda {
-  padding: 50 50 50 50;
+  padding: 50px 50px 50px 50px;
+  font-family: "century gothic", sans-serif;  
 }
 
 @media screen and (max-width: 1100px) {
