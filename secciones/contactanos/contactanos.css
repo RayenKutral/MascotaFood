@@ -1,10 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;    
+  margin: 0px;
+  padding: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-section{
-    margin-top: 5vw;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+body {
+  background-color: #bbcdda;
+}
+
+section {
+  padding-top: 15vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  background-color: #bbcdda;
+  justify-content: space-around;
+}
+
+.titulo {
+  font-family: "Century Gothic", Verdana, sans-serif;
+}
+
+.flex-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+input {
+  outline: none;
+  border: #304b9662 2px solid;
+  border-radius: 50px;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  padding: 4px;
+  width: auto;
+  font-size: 2vw;
+}
+.name {
+  margin: 5px;
+}
+.email {
+  margin: 5px;
+}
+::placeholder {
+  padding: 0.1vw;
+  color: gray;
+  font-size: 2vw;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  background-image: none;
+}
+
+label {
+  font-family: "Century Gothic", Verdana, sans-serif;
+}
+
+#Consultas {
+  width: 25rem;
+  height: 8rem;
+}
+
+.boton {
+  width: 20%;
+  margin: 15px;
+}
+
+.mb-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mapa {
+  width: 50%;
+  margin-bottom: 200px;
+}
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(173, 6, 6);
+}
+
+.foot h3 {
+  margin: 20px;
+  margin-right: 250px;
+  font-family: "Lora", sans-serif;
+  font-size: 1.5vw;
+  color: antiquewhite;
+}
+
+.foot p {
+  margin: 20px;
+  margin-bottom: 100px;
+}
+.foot2 p {
+  margin: 1.2vw;
+}
+
+.foot2 h3 {
+  margin: 20px;
+  font-family: "Lora", sans-serif;
+  font-size: 1.5vw;
+  color: antiquewhite;
+}
+
+footer a {
+  position: sticky;
+  text-decoration: none;
+  color: rgb(154, 154, 170);
+  font-size: 1vw;
+  padding-bottom: 8px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 0px;
+  width: 70%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+footer a:hover::after {
+  transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-wrap: wrap;
+    padding-left:0;
+    padding-right: 0;
+  }
+  .flex-container {
+    margin-bottom: 20px;
+  }
+  .mapa {
+    width: 80%;
+    margin-bottom: 100px;
+}
+footer a {
+  font-size: 2vw;
+}
+.foot h3{
+  font-size: 2.5vw;
+}
+.foot2 h3{
+  font-size: 2.5vw;
+}
 }

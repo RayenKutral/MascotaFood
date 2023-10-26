@@ -1,52 +1,185 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;    
+  margin: 0px;
+  padding: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+/* Slider */
 
-.slider{
-    display: flex;
-    width: 300%;
-    height: 300px;
-    margin-left: -100%;
+.slider {
+  display: flex;
+  width: 300%;
+  height: 300px;
+  margin-left: -100%;
 }
-.slider-container{
-    overflow: hidden;
+.slider-container {
+  overflow: hidden;
 }
-    .slider-img{
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    }   
+.slider-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-    
-    .slider-btn{
-        position: absolute;
-        width: 2.5vw;
-        height: 2.5vw;
-        background: rgba(255, 255, 255, 0.295);
-        top: 20vw;
-        font-size: 2vw;
-        font-weight: bold;
-        font-family: monospace;
-        text-align: center;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.5s;
-    }
-    
-    .slider-btn:hover{
-        background-color: #ffffff;
-    }
-    
-    .slider-btn-right{
-    right: 10px;
-    }
-    
-    .slider-btn-left{
-    left: 10px;
-    }
+.slider-btn {
+  position: absolute;
+  width: 2.5vw;
+  height: 2.5vw;
+  background: rgba(255, 255, 255, 0.295);
+  top: 20vw;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.slider-btn:hover {
+  background-color: #ffffff;
+}
+
+.slider-btn-right {
+  right: 10px;
+}
+
+.slider-btn-left {
+  left: 10px;
+}
+
+/* Fin Slider */
+
+/* Estilos para la sección de la tienda */
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.container-items {
+  padding: 20 0 20 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.container-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header-tienda {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.producto {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Opcional: para asegurarse de que el contenedor ocupe todo el ancho disponible */
+  height: 300px; /* Cambia la altura según tus necesidades */
+  border-radius: 20px;
+}
+
+.info-product {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.producto:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.producto img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+
+.producto figure {
+  overflow: hidden;
+}
+
+.producto:hover img {
+  transform: scale(1.2); /* agranda la imagen cuando paso por arriba*/
+}
+
+.price {
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.info-product button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #035394;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5 0 5 0;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.icon {
+  color: #fff; /* Color de los iconos */
+  margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.Tienda {
+  padding: 0 0 50px 0;
+  margin: 50px 10px 10px 10px;
+}
+
+.titulo-tienda {
+  padding: 50 50 50 50;
+}
+
+@media screen and (max-width: 1100px) {
+  .container-items {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Cambiar a 2 columnas en pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-items {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Cambiar a 2 columnas en pantallas más pequeñas */
+  }
+}

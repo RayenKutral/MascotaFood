@@ -47,3 +47,6 @@ setInterval(function(){
     Next();
 }, 5000);
 
+function alerta(){
+    alert("Gracias por su compra")
+}

@@ -1,35 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="productos.css">    
-    <link rel="stylesheet" href="/secciones/navbar/navbar.css">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="productos.css" />
+    <link rel="stylesheet" href="/secciones/navbar/navbar.css" />
     <title>MascotaFood</title>
-</head>
+  </head>
 
-<body>
-    <header>        
-        <div id="navbar-container"></div>
+  <body>
+    <header>
+      <div id="navbar-container"></div>
     </header>
-    
+
     <div class="slider-container">
-        <div class="slider" id="slider">
-          <div class="slider__section">
-      <img src="/assets/2310-Website-Banner-Gato-Alimento-Royal-Canin-156288----100119----D.png" class="slider-img">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img
+            src="../../assets/2310-Website-Banner-Gato-Alimento-Royal-Canin-156288----100119----D.png"
+            class="slider-img"
+          />
         </div>
         <div class="slider__section">
-      <img src="/assets/2310-Website-Banner-Perro-Alimento-Balanced-121094----121123----D.png" class="slider-img">
+          <img
+            src="../..//assets/2310-Website-Banner-Perro-Alimento-Balanced-121094----121123----D.png"
+            class="slider-img"
+          />
         </div>
         <div class="slider__section">
-      <img src="/assets/2310-Website-Banner-Perro-y-Gato-Humedos-Sieger-132171--3x2--132181--3x2--D.png" class="slider-img">
-          </div>  
+          <img
+            src="../..//assets/2310-Website-Banner-Perro-y-Gato-Humedos-Sieger-132171--3x2--132181--3x2--D.png"
+            class="slider-img"
+          />
         </div>
-        <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
-        <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
       </div>
-    <script src="/secciones/productos/productos.js"></script> 
+      <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
+      <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+    </div>
+
+    <div class="Tienda">
+      <div class="header-tienda">
+        <h2 class="titulo-tienda">Tienda Online</h2>
+        <div class="container-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="container-items">
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/Royalcaninmini.webp"
+              alt="Royal canin"
+              height="300"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Royal canin mini 7.5kg</h3>
+            <p class="price">$18800.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/dogproadultos.webp"
+              alt="Dog pro adultos"
+              height="300px"
+              width="300px"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Dog pro 7.5kg</h3>
+            <p class="price">$14800.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/criadoresadultos.webp"
+              alt="Criadores adultos"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Criadores 22kg</h3>
+            <p class="price">$8600.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/vitalcancachorro.webp"
+              alt="Vitalcan cachorro"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Vitalcan cachorro 20kg</h3>
+            <p class="price">$15984.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/criadoresadultos.webp"
+              alt="Nutricare adultos"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Nutricare adultos 20kg</h3>
+            <p class="price">$15800.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/dogproadultospeque.webp"
+              alt="Dogpro adulto"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Dog pro perro adulto 20kg</h3>
+            <p class="price">$18400.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/agility.webp"
+              alt="agility"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Agility 15kg</h3>
+            <p class="price">$17900.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/purinaexellent.webp"
+              alt="Purina exellent"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Purina exellent 22kg</h3>
+            <p class="price">$27900.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <figure>
+            <img
+              src="../../assets/oldprince.webp"
+              alt="oldprince"
+              height="450"
+              width="300"
+            />
+          </figure>
+          <div class="info-product">
+            <h3>Old prince premium 7.5kg</h3>
+            <p class="price">$6300.00</p>
+            <button class="agregar-al-carrito" onclick="alerta()">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/secciones/productos/productos.js"></script>
     <script src="/secciones/navbar/navbar.js"></script>
-    
-</body>
+  </body>
 </html>

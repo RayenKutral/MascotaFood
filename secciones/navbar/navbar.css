@@ -12,7 +12,7 @@ header {
 }
 
 
-.container {
+.caja {
     display: flex;
     align-items: center;
     background-color: #bbcdda
@@ -46,6 +46,7 @@ header {
     padding: 10px;
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
+    transition: 0.8s;
 }
 ::placeholder{
     padding: 0.1vw;
@@ -69,6 +70,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: #035394;
+    transition: 0.8s;
 }
 .menu>li {
     position: relative;
@@ -91,8 +93,8 @@ header {
     position: relative;
     overflow: hidden;
     text-align: center;
-
 }
+
 .menu li:hover .submenu {
     visibility: visible;
     opacity: 1;
@@ -240,7 +242,25 @@ header {
 /* Fin de código MenúGatos */
 
 
+.caja.abajo .logo {
+    height: 5vw;
+    margin-top: 0.5vw;
+    margin-left: 5vw;
+    padding: 10px;
+    transition: 0.8s;   
+}
+.caja.abajo #buscador {
+   width: 20vw;
+   height: 2.2vw;
+   transition: 0.8s;
+}
+.navegacion.abajo1 .menu {
+    padding: 0.1vw;   
+    transition: 0.8s;
+}
+
 @media screen and (max-width: 768px) {
+    
 
     .logo {
         height: 14vw;
@@ -277,6 +297,26 @@ header {
         transition: right 0.3s;
         top: 14vw;
     }
+
+    .caja.abajo .logo {
+        height: 10vw;   
+        padding: 2px;
+        transition: 0.8s;   
+    }
+   
+    .navegacion.abajo1 .menu {
+        padding: 0.1vw;   
+        transition: 0.8s;
+        top: 11vw;
+    }
+
+    .navegacion.abajo1 .nav-menu_visible {
+        right: 0%;
+        transition: right top 0.3s;
+        top: 11vw;
+    }
+
+
     .menu> li> a {
         font-size: 2.5vw;
     }
@@ -286,7 +326,7 @@ header {
       background-color: #035394;
       width: 100%;
       left: 100%;
-      top: -85%;
+      top: -100%;
       border-radius: 10%;
     }
 
@@ -316,7 +356,7 @@ header {
     .menuPerros{
         z-index: 1000;
     }
-    input{
+    #buscador{
         display: none;
     }
 

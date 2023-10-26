@@ -10,6 +10,12 @@ body{
 
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /*/ PORTADA /*/
 
 .portada{    
@@ -53,8 +59,58 @@ body{
 }
 
 
-@media screen and (max-width: 768px) {
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(173, 6, 6);
+  }
+  
+  .foot h3 {
+    margin: 20px;
+    margin-right: 250px;
+    font-family: "Lora", sans-serif;
+    font-size: 1.5vw;
+    color: antiquewhite;
+  }
+  
+  .foot p {
+    margin: 20px;
+    margin-bottom: 100px;
+  }
+  .foot2 p {
+    margin: 1.2vw;
+  }
+  
+  .foot2 h3 {
+    margin: 20px;
+    font-family: "Lora", sans-serif;
+    font-size: 1.5vw;
+    color: antiquewhite;
+  }
+  
+  footer a {
+    position: sticky;
+    text-decoration: none;
+    color: rgb(154, 154, 170);
+    font-size: 1.3vw;   
+    padding-bottom: 8px;
+    font-family: "Century Gothic", sans-serif;
+  }
 
+  footer a::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: 0px;
+    width: 70%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+footer a:hover::after {
+    transform: scaleX(1);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
