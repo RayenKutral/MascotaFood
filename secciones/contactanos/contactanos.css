@@ -69,6 +69,10 @@ label {
   height: 8rem;
 }
 
+#customAlert #closeAlert{
+  display: none;
+}
+
 .boton {
   width: 20%;
   margin: 15px;
