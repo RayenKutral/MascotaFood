@@ -190,9 +190,12 @@ header {
 
   .slider {
       margin-top: 17vw;   
-      height: fit-content;
+      height: ;
   }
   .slider-btn{
     top: 95px;
+  }
+  .slider-img{
+    height: 75%;
   }
 }
