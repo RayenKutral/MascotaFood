@@ -12,9 +12,10 @@ header{
 }
 body{
     background-color: rgb(245, 222, 179);
+
 }
 h2{
-    color: rgb(255, 255, 255);
+    color: rgb(37, 81, 163);
     font-size: 50px;
     padding: 20px;
     margin: 10px;
@@ -27,6 +28,7 @@ p{
     padding: 10px;
     text-align: justify;
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #Nosotros {
@@ -166,4 +168,41 @@ footer {
   color: white;
   font-family: 'Courier New', Courier, monospace;  
   font-size: 12px;
+  }
+
+  @media screen and (max-width: 700px){
+
+      #Nosotros{
+      margin-top: 100px;
+         }
+    .footer-caja {
+      flex-direction: column;
+      justify-content: center;   
+    }
+  
+    .foot-container{
+    margin: 0;
+    justify-content: center;
+    }
+   
+  .footer-image{
+   justify-content: center;
+   display: flex;
+  }
+  .redes{
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .imagenfooter{
+    margin: 0;
+    width: 150px;
+  }
+    .imagefloat{
+      width: 90%;
+      justify-content: center;
+      align-content: center;
+      padding: 0;   
+      height: 50%;
+    }
   }
