@@ -52,7 +52,6 @@ function showCustomAlert(message) {
 }
 
 
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   if (validateForm()) {

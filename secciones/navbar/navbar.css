@@ -48,7 +48,7 @@ header {
     font-family: "Century Gothic",Verdana,sans-serif;
     transition: 0.8s;
 }
-::placeholder{
+.buscador::placeholder {
     padding: 0.1vw;
     color: gray;
     font-size: 1vw;

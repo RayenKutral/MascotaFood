@@ -12,23 +12,26 @@
     </header>
 
    <section>
-         <div class="flex-container">
+         <div class="form-container">
           <h2 class="titulo">Contactenos</h2>
           <form id="myForm" onsubmit="return validarFormulario()">
 
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" class="casilla" id="nombre" name="nombre" placeholder="Nombre" autocomplete="on" required><br>
 
-            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required><br>
+            <input type="email" class="casilla" id="email" name="email" placeholder="Correo Electrónico" autocomplete="on" required><br>
 
             <textarea id="consulta" name="consulta" rows="4" cols="50" placeholder="Consulta" required></textarea><br>
 
-            <input type="submit" value="Enviar">
+            <input class="enviar" type="submit" value="Enviar">
         </form>
-        <div id="customAlert" class="hidden">
-          <p id="alertText"></p>
-          <button id="closeAlert">Cerrar</button>
         </div>
-
+        <div id="customAlert" class="hidden">
+          <div class="modal">
+            <div class="modal-content">
+              <p id="alertText"></p>
+              <button id="closeAlert">Cerrar</button>
+            </div>
+          </div>
         </div>
    <div class="mapa">
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.5356691155423!2d-58.084286730163576!3d-34.85264215000307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2ded90d430183%3A0x749c7ddcc7aa32eb!2sMagenta%20Impresion!5e0!3m2!1ses-419!2sar!4v1696891107111!5m2!1ses-419!2sar" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
