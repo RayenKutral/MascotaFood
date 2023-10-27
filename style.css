@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -13,14 +14,15 @@ body{
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%;   
 }
 
 /*/ PORTADA /*/
 
 .portada{    
-    background-image: url(assets/Diseño\ sin\ título.jpg);
-    background-size: 100% auto;
+    margin-top: 60px;
+    background-image: url(assets/Diseno_sin_titulo.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     align-items: center;
@@ -41,23 +43,19 @@ header{
 
 .portada p{
     width: 52%;
-    margin-bottom: 10%;
+   
     align-self: left;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 30px;
     color: rgb(107, 101, 101);
-}
-.portada h2{
-    width: 52%;
-    margin-bottom: 10%;
-    align-self: left;
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    color: rgb(107, 101, 101);
+    font-weight: 600;
 }
 
+.pabajo{
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
 
 footer {
     display: flex;
@@ -69,7 +67,7 @@ footer {
     margin: 20px;
     margin-right: 250px;
     font-family: "Lora", sans-serif;
-    font-size: 1.5vw;
+    font-size: 15px;
     color: antiquewhite;
   }
   
@@ -84,7 +82,7 @@ footer {
   .foot2 h3 {
     margin: 20px;
     font-family: "Lora", sans-serif;
-    font-size: 1.5vw;
+    font-size: 15px;
     color: antiquewhite;
   }
   
@@ -92,7 +90,7 @@ footer {
     position: sticky;
     text-decoration: none;
     color: rgb(154, 154, 170);
-    font-size: 1.3vw;   
+    font-size: 12px;   
     padding-bottom: 8px;
     font-family: "Century Gothic", sans-serif;
   }
@@ -113,6 +111,22 @@ footer a:hover::after {
     transform: scaleX(1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+
+@media screen and (max-width: 768px) { 
+  .portada h1 {
+    font-size: 25px;
+    width: 80%;
+  }
+  .portada p{
+    font-size: 20px;  
+    color:  rgb(107, 101, 101);
+    text-align: center;
+    width: 80%;
+  }
+
+  .pabajo{
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
 }

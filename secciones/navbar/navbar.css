@@ -15,11 +15,12 @@ header {
 .caja {
     display: flex;
     align-items: center;
-    background-color: #bbcdda
+    background-color: #bbcdda;
+    justify-content: center;
 }
 
 .logo {
-    height: 7vw;
+    height:6vw;
     margin-top: 0.5vw;
     margin-left: 5vw;
     padding: 10px;
@@ -66,29 +67,28 @@ header {
 
 /* Menú */
 .menu {
-    padding: 0.5vw;
+    padding: 0.1vw;
     display: flex;
     justify-content: space-evenly;
-    background-color: #035394;
+    background-color: transparent;
     transition: 0.8s;
 }
 .menu>li {
     position: relative;
     display: inline-block;
-    margin-top: 0.5vw;
-}
+    margin-top: 0.5vw;}
 .menu>li>a {
     display: block;
     padding: 5px;
-    margin-right: 2vw;
-    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
     margin-bottom: 0.5vw;
     text-decoration: none;
     font-family: "Century Gothic",Verdana,sans-serif;
     font-size: 1vw;
     font-weight: bold;
     border-radius: 20px;
-    color: white;
+    color: #035394;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -115,7 +115,7 @@ header {
     bottom: 0px;
     width: 70%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #035394;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -129,7 +129,7 @@ header {
 /* SubMenú */
 .submenu {
     position: absolute;
-    background-color:#035394;
+    background-color: #bbcdda;
     width: 110%;
     visibility: hidden;
     opacity: 0;
@@ -142,7 +142,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: white;
+    color: #035394;
     font-size: 1vw;
     font-weight: bold;
     font-family: "Century Gothic",Verdana,sans-serif;
@@ -160,7 +160,7 @@ header {
 /* SubSubMenú */
 .subsubmenu {
     position: absolute;
-    background-color: #035394;
+    background-color: #bbcdda;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
@@ -174,7 +174,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: white;
+    color: #035394;
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -185,7 +185,7 @@ header {
 /* MenúPerros */
 .menuPerros {
     position: absolute;
-    background-color: #035394;
+    background-color: #bbcdda;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
@@ -200,7 +200,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: white;
+    color: #035394;
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -215,7 +215,7 @@ header {
 /* MenúGatos */
 .menuGatos {
     position: absolute;
-    background-color: #035394;
+    background-color: #bbcdda;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
@@ -230,7 +230,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: white;
+    color: #035394;
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -260,7 +260,9 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    
+    .caja{
+        justify-content: flex-start;
+    }
 
     .logo {
         height: 14vw;
@@ -290,6 +292,7 @@ header {
     }
     .menu > li > a {
         text-align: center;
+        color: white;
         }
 
     .nav-menu_visible {
