@@ -72,7 +72,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
+  height: auto;  
 }
 
 .subtitulo{
@@ -98,7 +98,7 @@ header{
   overflow: hidden;
   align-items: center;
   display: flex; 
-  margin: 20px;
+  padding: 2vw;
   justify-content: center; 
 }
 
@@ -106,7 +106,7 @@ header{
   width: 100%;
   height: auto;
   transition: opacity 1s;
-  border-radius: 150px;  
+  border-radius: 500px;  
 }
 
 
@@ -248,9 +248,11 @@ footer {
   .section2{
     flex-direction: column;
     height: 830px;
+    justify-content: center;
+    align-items: center;
   }
   .grupo2{
-    align-items: center;
+    align-items: center;    
   }
   .subtitulo{
     text-align: center;
@@ -259,19 +261,25 @@ footer {
     text-align: center;
   }
 
-  footer {
+  .footer-caja {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
   }
-.foot-container{
+
+  .foot-container{
   margin: 0;
   justify-content: center;
-}
+  }
  
 .footer-image{
  justify-content: center;
  display: flex;
 }
+.redes{
+  justify-content: center;
+  text-align: center;
+}
+
 .imagenfooter{
   margin: 0;
   width: 150px;
@@ -285,4 +293,10 @@ footer {
     height: 50%;
   }
   
+}
+
+
+@media screen and (min-width: 1400px) {
+    
+   .
 }

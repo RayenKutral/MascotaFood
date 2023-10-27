@@ -14,7 +14,7 @@ header {
 }
 
 body {
-  background-color: #bbcdda;
+  background-color: rgba(245, 222, 179, 0.884);
 }
 
 .formclass {
@@ -22,7 +22,6 @@ body {
   padding-top: 15vw;
   padding-left: 10vw;
   padding-right: 10vw;
-  background-color: #bbcdda;
   justify-content: space-around;
   align-items: center;
   align-self: center;
@@ -40,6 +39,10 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  background-color:#bbcdda70;
+  border-radius: 60px;
+  padding: 30px;
+    margin: 30px;
 }
 
 #myForm{
@@ -280,6 +283,38 @@ font-size: 12px;
   .mapa {
     width: 80%;
     margin-bottom: 100px;
+}
+
+.footer-caja {
+  flex-direction: column;
+  justify-content: center;   
+}
+
+.foot-container{
+margin: 0;
+justify-content: center;
+}
+
+.footer-image{
+justify-content: center;
+display: flex;
+}
+.redes{
+justify-content: center;
+text-align: center;
+}
+
+.imagenfooter{
+margin: 0;
+width: 150px;
+}
+
+.imagefloat{
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+  padding: 0;   
+  height: 50%;
 }
 
 }
