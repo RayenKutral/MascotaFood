@@ -14,7 +14,7 @@ body{
     background-color: rgb(245, 222, 179);
 
 }
-h2{
+#Nosotros h2{
     color: rgb(37, 81, 163);
     font-size: 50px;
     padding: 20px;
@@ -23,7 +23,7 @@ h2{
     text-align: left;
 }
     
-p{
+#Nosotros p{
     margin-bottom: 20px;
     padding: 10px;
     text-align: justify;
