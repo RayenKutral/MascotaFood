@@ -189,13 +189,12 @@ header {
   }
 
   .slider {
-      margin-top: 17vw;   
-      height: ;
+      margin-top: 17vw;     
   }
   .slider-btn{
-    top: 95px;
+    top: 135px;
   }
   .slider-img{
-    height: 75%;
+    height: 55%;
   }
 }
