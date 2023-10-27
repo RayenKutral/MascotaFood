@@ -5,11 +5,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body{
+  background-color: #bbcdda;
+}
 header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
+  background-color: #bbcdda;
 }
 
 /* Slider */
@@ -19,7 +23,7 @@ header {
   width: 300%;
   height: 180px;
   margin-left: -100%;
-  margin-top: 11.8%;  
+  margin-top: 92px;   
 }
 .slider-container {
   overflow: hidden;
@@ -36,7 +40,7 @@ header {
   width: 2.5vw;
   height: 2.5vw;
   background: rgba(255, 255, 255, 0.295);
-  top: 20vw;
+  top: 180px;
   font-size: 2vw;
   font-weight: bold;
   font-family: monospace;
@@ -96,6 +100,7 @@ header {
   height: 280px; /* Cambia la altura según tus necesidades */
   border-radius: 20px;
   transition: all 0.5s ease;
+  background-color: white;
 }
 
 .info-product {
@@ -181,5 +186,13 @@ header {
       1,
       1fr
     ); /* Cambiar a 2 columnas en pantallas más pequeñas */
+  }
+
+  .slider {
+      margin-top: 17vw;   
+      height: fit-content;
+  }
+  .slider-btn{
+    top: 95px;
   }
 }

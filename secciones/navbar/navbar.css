@@ -71,7 +71,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 .menu>li {
     position: relative;
