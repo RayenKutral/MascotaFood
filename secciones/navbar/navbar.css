@@ -72,6 +72,9 @@ header {
     justify-content: space-evenly;
     background-color: transparent;
     transition: 0.4s;
+    background-color: beige;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 .menu>li {
     position: relative;
@@ -129,12 +132,13 @@ header {
 /* SubMenú */
 .submenu {
     position: absolute;
-    background-color: #bbcdda;
+    background-color: #666666e3;
     width: 110%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
     z-index: 1000;
+    border-radius: 10px;     
 }
 
 .submenu>li>a {
@@ -142,7 +146,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: #035394;
+    color: rgb(224, 231, 236);
     font-size: 1vw;
     font-weight: bold;
     font-family: "Century Gothic",Verdana,sans-serif;
@@ -160,12 +164,13 @@ header {
 /* SubSubMenú */
 .subsubmenu {
     position: absolute;
-    background-color: #bbcdda;
+    background-color: #666666e3;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
     left: 100%;
     top: 0%;
+    border-radius: 10px;
   }
 .subsubmenu>li>a {
     display: block;
@@ -174,7 +179,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: #035394;
+    color: rgb(224, 231, 236);
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -185,12 +190,13 @@ header {
 /* MenúPerros */
 .menuPerros {
     position: absolute;
-    background-color: #bbcdda;
+    background-color: #666666e3;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
     left: 100%;
     top: 0%;
+    border-radius: 10px;
 
 }
 .menuPerros>li>a {
@@ -200,7 +206,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: #035394;
+    color: rgb(224, 231, 236);
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -215,12 +221,13 @@ header {
 /* MenúGatos */
 .menuGatos {
     position: absolute;
-    background-color: #bbcdda;
+    background-color: #666666e3;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
     left: 100%;
     top: 50%;
+    border-radius: 10px;
 
 }
 .menuGatos>li>a {
@@ -230,7 +237,7 @@ header {
     padding: 0.2vw;
     padding-bottom: 0.5vw;
     margin: 1.5vw;
-    color: #035394;
+    color: rgb(224, 231, 236);
     font-family: "Century Gothic",Verdana,sans-serif;
     text-decoration: none;
     text-align: center;
@@ -293,6 +300,7 @@ header {
     .menu > li > a {
         text-align: center;
         color: white;
+        margin-left: 20px;
         }
 
     .nav-menu_visible {
@@ -328,7 +336,7 @@ header {
       position: absolute;
       background-color: #035394;
       width: 100%;
-      left: 100%;
+      left: 103%;
       top: -100%;
       border-radius: 10%;
     }

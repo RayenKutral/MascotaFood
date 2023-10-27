@@ -15,4 +15,4 @@ setTimeout(() => {
     var header = document.querySelector(".navegacion");
     header.classList.toggle("abajo1", window.scrollY > 5)
   });
-}, 100);
+}, 200);

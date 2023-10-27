@@ -17,7 +17,7 @@ body {
   background-color: #bbcdda;
 }
 
-section {
+.formclass {
   display: flex;
   padding-top: 15vw;
   padding-left: 10vw;
@@ -152,18 +152,39 @@ section {
   height: 100%;
 }
 
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: rgb(173, 6, 6);
+/* FOOTER */
+
+footer {  
+  background-color: #ad0606;
+}
+.footer-caja{
+display: flex;    
+flex-direction: row-reverse;
+justify-content: space-around;
 }
 
-.foot h3 {
-  margin: 20px;
-  margin-right: 250px;
-  font-family: "Lora", sans-serif;
-  font-size: 1.5vw;
+.foot-container{
+  display: flex;     
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.foot2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer h3 {
+  margin: 20px;  
+  margin-bottom: 10px;  
+  font-family: "Century gothic", sans-serif;
+  font-size: 15px;
   color: antiquewhite;
+  font-weight: lighter;
 }
 
 .foot p {
@@ -171,39 +192,79 @@ footer {
   margin-bottom: 100px;
 }
 .foot2 p {
-  margin: 1.2vw;
-}
-
-.foot2 h3 {
   margin: 20px;
-  font-family: "Lora", sans-serif;
-  font-size: 1.5vw;
-  color: antiquewhite;
+  margin-bottom: 5px;
 }
-
-footer a {
-  position: sticky;
+  
+.foot-container a {
+  position: sticky;    
   text-decoration: none;
   color: rgb(154, 154, 170);
-  font-size: 1vw;
+  font-size: 11.5px;   
   padding-bottom: 8px;
   font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
 }
 
-footer a::after {
+.foot-container a::after {
   content: "";
   position: absolute;
   left: 15%;
   bottom: 0px;
   width: 70%;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.5s ease;
 }
-footer a:hover::after {
+.foot-container a:hover::after {
   transform: scaleX(1);
+}
+.imagenfooter{
+width: 200px;
+
+}
+
+.redes{
+justify-content: center;
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+.redes a {
+color: azure;
+position: unset;
+text-align: center;
+margin: 10px;  
+}
+
+.redes a i{
+font-size: 25px;
+animation: ;
+}
+
+
+
+.redesbutton{
+justify-content: center;
+display: flex;
+}
+
+
+.copy{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: rgb(143, 4, 4);
+}
+.copy p{
+text-align: center;
+margin: 5px;
+margin-top: 10px;
+color: white;
+font-family: 'Courier New', Courier, monospace;  
+font-size: 12px;
 }
 
 
@@ -220,16 +281,5 @@ footer a:hover::after {
     width: 80%;
     margin-bottom: 100px;
 }
-footer a {
-  font-size: 2vw;
-}
-.foot h3{
-  font-size: 2.5vw;
-}
-.foot2 h3{
-  font-size: 2.5vw;
-}
-footer {
-  display: ;
-}
+
 }
