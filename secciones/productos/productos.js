@@ -47,6 +47,17 @@ setInterval(function(){
     Next();
 }, 5000);
 
+
+// -----------------------------------------------------------------------
+
+let contador = 0;
+
 function alerta(){
-    alert("Gracias por su compra")
+    contador++;
+    actualizarContador();
+    alert("Item añadido al carrito")
+}
+function actualizarContador() {
+    const contadorElemento = document.getElementById("contadorCarrito");
+    contadorElemento.textContent = contador.toString();
 }
