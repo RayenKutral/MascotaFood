@@ -33,7 +33,7 @@ header{
 }
 .portada h1 {
     text-align: center;
-    color: rgb(37, 81, 163);
+    color: #FF8F8F;
     font-family: 'Lora', serif;
     font-size: 55px;
     padding: 20px;
@@ -43,8 +43,7 @@ header{
 }
 
 .portada p{
-    width: 52%;
-   
+    width: 52%;   
     align-self: left;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -62,7 +61,7 @@ header{
 
 .section2{
   display: flex;
-  background-color: rgb(125, 153, 204);
+  background-color: #ffabab;
   height: 600px;
   width: 100%;
 }
@@ -78,18 +77,19 @@ header{
 .subtitulo{
   text-align: center;
     margin: 20px;
-    color: rgb(255, 255, 255);
+    color:  rgb(107, 101, 101);
     font-family: 'Lora', serif;
     font-size: 35px;
+    padding-left: 10px;
 }
 
 .texto2{      
     text-align: left;
     font-family: 'Raleway', sans-serif;    
-    color: rgb(240, 230, 230);
+    color:  rgb(255, 255, 255);
     padding: 20px;
    font-size: 25px;
-   font-weight: bold;
+   font-weight: bolder;
 }
 
 .imagefloat {
@@ -114,7 +114,7 @@ header{
 
 
 footer {  
-    background-color: #ad0606;
+    background-color: #508D69;
   }
 .footer-caja{
   display: flex;    
@@ -230,7 +230,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(143, 4, 4);
+  background-color: #325e44;
 }
 .copy p{
   text-align: center;
@@ -241,7 +241,38 @@ footer {
   font-size: 12px;
 }
 
+.botón-comida{
+  display: flex;
+  margin-left: 300px;
+  padding: 20px; 
+}
+.botón-comida button{
+  background-color: #ff0000c9;
+  padding: 10px;
+  border-radius: 10px;    
+  border-color: #17010140;
+  transition: all 0.5s ease;
+}
 
+.botón-comida a{
+  font-family: 'Century gothic', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.botón-comida a:hover{
+  color: #000000;
+  transform: scale(1.05);
+}
+.botón-comida button:hover{
+background-color: rgb(255, 255, 255);
+
+border-color: #00000000;
+transform: scale(1.05);
+box-shadow: 5px 5px 10px rgb(147, 148, 150);
+}
 
 
 @media screen and (max-width: 768px) { 

@@ -15,19 +15,19 @@ header {
 .caja {
     display: flex;
     align-items: center;
-    background-color: #bbcdda;
+    background-color: #9ADE7B;
     justify-content: center;
 }
 
 .logo {
     height:6vw;
     margin-top: 0.5vw;
-    margin-left: 5vw;
+    margin-left: 2vw;
     padding: 10px;
     transition: 0.8s;   
 }
 .nav-toggle {
-  color: rgb(8, 85, 156);
+  color: #437558;
    background: none;
    border: none;
    font-size: 5vw;
@@ -39,15 +39,16 @@ header {
 #buscador {
     position: static;
     outline: none;
-    margin-left: 4vw;
-    width: 35vw;
+    margin-left: 1vw;
+    width: 30vw;
     height: 2.5vw;
-    border: #94030362 2px solid;
+    border: #ff8f8f52 2px solid;
     border-radius: 50px;
     padding: 10px;
     font-size: 1vw;
     font-family: "Century Gothic",Verdana,sans-serif;
     transition: 0.8s;
+    box-shadow: 5px 0px 10px #ff8f8f52;
 }
 .buscador::placeholder {
     padding: 0.1vw;
@@ -91,7 +92,7 @@ header {
     font-size: 1vw;
     font-weight: bold;
     border-radius: 20px;
-    color: #035394;
+    color: #437558;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -118,7 +119,7 @@ header {
     bottom: 0px;
     width: 70%;
     height: 2px;
-    background-color: #035394;
+    background-color: #0d4725;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -287,7 +288,7 @@ header {
     .menu {
         flex-direction: column;
         align-items: baseline;
-        background-color: #035394;
+        background-color: #437558;
         padding: 0;
         position: fixed;
         top: 14vw;
@@ -334,7 +335,7 @@ header {
 
     .submenu {
       position: absolute;
-      background-color: #035394;
+      background-color: #437558;
       width: 100%;
       left: 103%;
       top: -100%;
@@ -348,17 +349,17 @@ header {
 
     .subsubmenu{
         left: 100%;
-        background-color: #035394;
+        background-color: #437558;
     }
 
     .menuGatos{
         left: 100%;
-        background-color: #035394;
+        background-color: #437558;
     }
 
     .menuPerros{
         left: 100%;
-        background-color: #035394;
+        background-color: #437558;
     }
 
     .menuGatos{

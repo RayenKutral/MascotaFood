@@ -14,7 +14,7 @@ header {
 }
 
 body {
-  background-color: rgba(245, 222, 179, 0.884);
+  background-color: #e4e6c9;
 }
 
 .formclass {
@@ -30,7 +30,8 @@ body {
 
 .titulo {
   font-family: "Century Gothic", Verdana, sans-serif;
-  color: #035394;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .form-container {
@@ -39,7 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color:#bbcdda70;
+  background-color:#9ADE7B;
   border-radius: 60px;
   padding: 30px;
     margin: 30px;
@@ -50,6 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
+  gap: 5px;
 }
 
 .casilla {
@@ -83,15 +85,28 @@ body {
   border: none;
 }
 
-.enviar{
-  background-color: #035394;
+.toggle-enviar{
+
+}
+.enviar{  
   font-family: "Century Gothic", Verdana, sans-serif;
   font-weight: 800;
-  padding: 8px;
-  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px; 
   color: white;
   border: 0;
-  cursor: pointer;
+  cursor: pointer;  
+  background-color: #508D69;
+  margin: 10px;
+  border-radius: 20px;
+  width: 200px;
+  border-color: none;
+  box-shadow: 1px 1px 5px #508D69;
+  transition: all 0.5s ease;
+}
+
+.enviar:hover{
+  transform: scale(1.05);
 }
 
 .name {
@@ -157,8 +172,9 @@ body {
 
 /* FOOTER */
 
+
 footer {  
-  background-color: #ad0606;
+  background-color: #508D69;
 }
 .footer-caja{
 display: flex;    
@@ -241,28 +257,27 @@ position: unset;
 text-align: center;
 margin: 10px;  
 }
-
 .redes a i{
 font-size: 25px;
 }
 
 @keyframes girar {
-  0% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(360deg);
-  }
-  90%{
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+0% {
+  transform: rotate(0deg);
+}
+80% {
+  transform: rotate(360deg);
+}
+90%{
+  transform: rotate(360deg);
+}
+100% {
+  transform: rotate(360deg);
+}
 }
 .redes i {
-  animation: girar 3s infinite;
-  animation-play-state: running, paused;
+animation: girar 3s infinite;
+animation-play-state: running, paused;
 }
 
 .redesbutton{
@@ -275,7 +290,7 @@ display: flex;
 display: flex;
 justify-content: center;
 flex-direction: column;
-background-color: rgb(143, 4, 4);
+background-color: #325e44;
 }
 .copy p{
 text-align: center;
