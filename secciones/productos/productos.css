@@ -21,7 +21,7 @@ header {
 .slider {
   display: flex;
   width: 300%;
-  height: 180px;
+  height: auto;
   margin-left: -100%;
   margin-top: 6.5vw;   
 }

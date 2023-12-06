@@ -51,12 +51,21 @@ setInterval(function(){
 // -----------------------------------------------------------------------
 
 let contador = 0;
+let productosSeleccionados = [];
 
 function alerta(){
     contador++;
     actualizarContador();
     alert("Item añadido al carrito")
+    const nuevoProducto = {
+        id: contador,
+        nombre: "Producto " + contador,
+        precio: 10.00
+    };
+
+    productosSeleccionados.push(nuevoProducto);
 }
+
 function actualizarContador() {
     const contadorElemento = document.getElementById("contadorCarrito");
     contadorElemento.textContent = contador.toString();
