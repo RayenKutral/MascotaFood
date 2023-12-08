@@ -8,11 +8,11 @@
     <title>MascotaFood</title>
   </head>
 
-  <body>
+  <body>    
     <header>
       <div id="navbar-container"></div>
     </header>
-
+  
     <div class="slider-container">
       <div class="slider" id="slider">
         <div class="slider__section">
@@ -37,183 +37,76 @@
       <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
       <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
     </div>
-
-
+  
+    <div id="carrito" class="carrito">
+     
+     
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button style="background-color: transparent; border: none; cursor: pointer; margin: 15px;" onclick="toggleMenu()">X</button>
+      <h2 class="titulo-carrito">Productos seleccionados</h2>
+      <div class="table-container">
+      <table>
+      <thead>
+        <tr class="product-row" data-id="" data-precio="">
+        <th scope="col" style="padding: 1px;">Código de articulo</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Cantidad</th>   
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">       
+              
+      </tr>
+      </tbody>
+      </table>
+      <div id="total-container">
+        <p>Total a pagar: $<span id="total">0.00</span></p>
+      </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btn-compra" onclick="compra()">Comprar</button>
+    </div>
     <div class="Tienda">
       <div class="header-tienda">
         <h2 class="titulo-tienda">Descubrí los mejores productos para tu mascota</h2>
-              <div class="container-icon">
-         <a href="/secciones/productos/Carrito.html"><img class="img-icon" src="/assets/carrito-de-compras(1).png"></a>
+         <div class="container-icon">
+         <button type="button" onclick="toggleMenu()" style="background-color: transparent; border: none; cursor: pointer;"><img class="img-icon" src="/assets/carrito-de-compras(1).png"></button>
          <div id="contadorCarrito">0</div>
+         
         </div>
       </div>
+      
+<!-- ----------------------------------------------------------------------- -->
 
-
-      <div class="container-items">
-        <div class="producto">
+      <div id="app" class="container-items">
+        <div class="producto" v-for="producto in productos">
           <figure>
             <img
-              src="../../assets/Royalcaninmini.webp"
-              alt="Royal canin"
+              :src="producto.imagen"
+              :alt="producto.nombre"
               height="100%"
               width="100%"
             />
           </figure>
-          <div class="info-product">
-            <h3>Royal canin mini 7.5kg</h3>
-            <p class="price">$18800.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/dogproadultos.webp"
-              alt="Dog pro adultos"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Dog pro 7.5kg</h3>
-            <p class="price">$14800.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/criadoresadultos.webp"
-              alt="Criadores adultos"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Criadores 22kg</h3>
-            <p class="price">$8600.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/vitalcancachorro.webp"
-              alt="Vitalcan cachorro"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Vitalcan cachorro 20kg</h3>
-            <p class="price">$15984.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/criadoresadultos.webp"
-              alt="Nutricare adultos"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Nutricare adultos 20kg</h3>
-            <p class="price">$15800.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/dogproadultospeque.webp"
-              alt="Dogpro adulto"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Dog pro perro adulto 20kg</h3>
-            <p class="price">$18400.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/agility.webp"
-              alt="agility"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Agility 15kg</h3>
-            <p class="price">$17900.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/purinaexellent.webp"
-              alt="Purina exellent"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Purina exellent 22kg</h3>
-            <p class="price">$27900.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
-              Comprar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto">
-          <figure>
-            <img
-              src="../../assets/oldprince.webp"
-              alt="oldprince"
-              height="100%"
-              width="100%"
-            />
-          </figure>
-          <div class="info-product">
-            <h3>Old prince premium 7.5kg</h3>
-            <p class="price">$6300.00</p>
-            <button class="agregar-al-carrito" onclick="alerta()">
+          <div class="info-product" >
+            <h1 style="display: none;">{{producto.id}}</h1>
+            <h3>{{producto.nombre}}</h3>
+            <p class="price">${{producto.precio}}</p>
+            <button class="agregar-al-carrito"  @click="agregarAlCarrito(producto)">
               Comprar
             </button>
           </div>
         </div>
       </div>
     </div>
-
+<!-- ----------------------------------------------------------------------- -->
 
     <footer>  
       <div class="footer-caja">
@@ -247,7 +140,9 @@
         </div>    
     </footer>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="/secciones/productos/productos.js"></script>
-    <script src="/secciones/navbar/navbar.js"></script>
+    
+   
   </body>
 </html>
