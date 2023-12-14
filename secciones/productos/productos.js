@@ -12,7 +12,7 @@ createApp({
     return {
       productos: [],  
       // url: 'http://127.0.0.1:5001/productos',
-      url: 'http://florvega22.pythonanywhere.com/productos',
+      url: 'https://florvega22.pythonanywhere.com/productos',
       productosSeleccionados: [],
       total: 0,
       contador: 0,

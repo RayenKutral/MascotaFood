@@ -18,7 +18,7 @@ createApp({
       imagen: "",
       stock: 0,
       precio: 0,
-      url: "http://florvega22.pythonanywhere.com/productos/" + id,
+      url: "https://florvega22.pythonanywhere.com/productos/" + id,
     };
   },
   methods: {
