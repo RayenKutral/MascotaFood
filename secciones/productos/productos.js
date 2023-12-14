@@ -48,11 +48,9 @@ createApp({
     }, 
 
     compra(){      
-      if (this.productosSeleccionados > 1) {          
+     
      alert("Su orden ha sido enviada");
-     } else {
-      alert("Carrito vacío")
-     }     
+   
   },
 
     actualizarContador() {
@@ -72,10 +70,10 @@ createApp({
       this.actualizarCantidadEnTabla(producto.id, productoExistente.cantidad);
   } else {
       producto.cantidad = 1;      
-      alert("Producto añadido al carrito");      
+      alert("Producto añadido al carrito");   
+      this.actualizarTotal();   
       this.productosSeleccionados.push(producto);
       this.agregarFilaATabla(producto);   
-
   }  
   alert("Producto añadido al carrito");
   this.actualizarTotal();
