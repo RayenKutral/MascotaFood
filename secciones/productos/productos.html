@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="productos.css" />
     <link rel="stylesheet" href="/secciones/navbar/navbar.css" />
     <title>MascotaFood</title>
+
   </head>
 
   <body>    
+    <div id="app">
+
     <header>
       <div id="navbar-container"></div>
     </header>
@@ -46,7 +49,7 @@
       <br>
       <br>
       <br>
-      <button style="background-color: transparent; border: none; cursor: pointer; margin: 15px;" onclick="toggleMenu()">X</button>
+      <button style="background-color: transparent; border: none; cursor: pointer; margin: 15px;" @click="toggleMenu()">X</button>
       <h2 class="titulo-carrito">Productos seleccionados</h2>
       <div class="table-container">
       <table>
@@ -59,25 +62,31 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="">       
-              
+      <tr v-for="producto in productosSeleccionados" :key="producto.id" :data-id="producto.id">
+          <td>{{ producto.id }}</td>
+          <td>{{ producto.nombre }}</td>
+          <td>{{ producto.precio }}</td>
+          <td>{{ producto.cantidad }}</td>
+          <td>
+              <button type="button" class="btn-danger" @click="eliminarProducto(producto)">Eliminar</button>
+          </td>
       </tr>
-      </tbody>
+  </tbody>
       </table>
       <div id="total-container">
-        <p>Total a pagar: $<span id="total">0.00</span></p>
+        <p>Total a pagar: $<span id="total">{{ total.toFixed(2) }}</span></p>
+    </div>
       </div>
-      </div>
       <br>
       <br>
       <br>
-      <button type="button" class="btn-compra" onclick="compra()">Comprar</button>
+      <button type="button" class="btn-compra" @click="compra()">Comprar</button>
     </div>
     <div class="Tienda">
       <div class="header-tienda">
-        <h2 class="titulo-tienda">Descubrí los mejores productos para tu mascota</h2>
+        <h2 class="titulo-tienda">Catalogo de productos</h2> <a href="nuevoproducto.html"><button type="button" class="boton-agregar">Agregar producto</button></a>
          <div class="container-icon">
-         <button type="button" onclick="toggleMenu()" style="background-color: transparent; border: none; cursor: pointer;"><img class="img-icon" src="/assets/carrito-de-compras(1).png"></button>
+         <button type="button" @click="toggleMenu()" style="background-color: transparent; border: none; cursor: pointer;"><img class="img-icon" src="/assets/carrito-de-compras(1).png"></button>
          <div id="contadorCarrito">0</div>
          
         </div>
@@ -85,8 +94,8 @@
       
 <!-- ----------------------------------------------------------------------- -->
 
-      <div id="app" class="container-items">
-        <div class="producto" v-for="producto in productos">
+      <div class="container-items">
+        <div class="producto"  v-for="producto in productos" :key="producto.id">
           <figure>
             <img
               :src="producto.imagen"
@@ -96,16 +105,24 @@
             />
           </figure>
           <div class="info-product" >
-            <h1 style="display: none;">{{producto.id}}</h1>
+            <h1>{{producto.id}}</h1>
             <h3>{{producto.nombre}}</h3>
             <p class="price">${{producto.precio}}</p>
+            <p class="stock">Stock: {{producto.stock}}</p>
             <button class="agregar-al-carrito"  @click="agregarAlCarrito(producto)">
-              Comprar
+              Añadir al carrito
             </button>
+            <a><button class="editar-producto">
+             Editar <img src="/assets/editar.png" width="20px" height="20px">
+            </button></a>
+            <a><button class="eliminar-producto">
+              Eliminar <img src="/assets/boton-eliminar.png" width="20px" height="20px">
+            </button></a>           
           </div>
         </div>
       </div>
     </div>
+    
 <!-- ----------------------------------------------------------------------- -->
 
     <footer>  
@@ -139,10 +156,8 @@
         <p> 2023 © | Mascota Food</p><p>Desarrollado por Estudiantes de "Codo a Codo"</p>
         </div>    
     </footer>
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="/secciones/productos/productos.js"></script>
-    
-   
+    </div>
+       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/secciones/productos/productos.js"></script>    
   </body>
 </html>

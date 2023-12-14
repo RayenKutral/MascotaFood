@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #9ade7b, #9ade7b, #437558);  
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+  }
+
+  .logo-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .img-login{
+    width: 60vw;
+    height: auto;
+  }
+
+  .btn{
+    background-color: #437558;
+  }

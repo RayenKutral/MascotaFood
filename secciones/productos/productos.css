@@ -78,6 +78,18 @@ header {
   padding: 50px 50px 50px 50px;
   font-family: "century gothic", sans-serif;
   }
+ .boton-agregar {
+  cursor: pointer; 
+  font-size: 15px; 
+  background-color: green;
+   font-family: Century Gothic, sans-serif; 
+   color: aliceblue; 
+   font-weight: bolder; 
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.575); 
+   padding: 10px;
+   border-radius: 20px; 
+  border: none;
+}
   
 
 .Tienda img {
@@ -128,7 +140,7 @@ header {
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   width: 100%; /* Opcional: para asegurarse de que el contenedor ocupe todo el ancho disponible */
-  height: 280px; /* Cambia la altura según tus necesidades */
+  height: auto; /* Cambia la altura según tus necesidades */
   border-radius: 20px;
   transition: all 0.5s ease;
   background-color: white;
@@ -172,9 +184,8 @@ header {
   background: none;
   background-color: #508D69;
   color: whitesmoke;
-  padding: 15px 10px;
+  padding: 10px 10px;
   cursor: pointer;
-  width: 100px;
   font-family: "century gothic", sans-serif;
   transition: all 0.4s ease;
 
@@ -182,6 +193,21 @@ header {
 .info-product button:hover{
     background-color: rgba(90, 88, 88, 0.822);
     color: black;
+}
+.editar-producto{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+}
+.eliminar-producto{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .social-icons {
@@ -401,7 +427,7 @@ font-size: 12px;
     top: 135px;
   }
   .slider-img{
-    height: 55%;
+    height: auto;
   }
 
 
