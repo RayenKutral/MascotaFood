@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="editarproducto.css" />
+    <link rel="stylesheet" href="/secciones/navbar/navbar.css" />
+    <title>MascotaFood</title>
+
+  </head>
+
+  <body>    
+    <header>
+      <div id="navbar-container"></div>
+    </header>
+    <main>
+      <div class="container" id="app">
+      <form style="background-color: rgba(125, 202, 131, 0.37); margin:10px auto ; width: 400px; padding: 20px; border-radius: 20px;">
+      <h2>Editar Producto</h2>
+      <p>Precio: ${{precio}}</p>
+      <div class="mb-3">
+      <label for="id">Id</label>
+      <input type="number" name="id" id="id" disabled v-model="id">
+      </div>
+      <div class="mb-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" v-model="nombre">
+      </div>
+      <div class="mb-3">
+      <label for="precio">Precio</label>
+      <input type="number" name="precio" id="precio" v-model="precio">
+      </div>
+      <div class="mb-3">
+      <label for="stock">Stock</label>
+      <input type="number" name="stock" id="stock" v-model="stock">
+      </div>
+      <div class="input-imagen">
+      <label for="imagen">Imagen</label>
+      <input type="text" name="imagen" id="imagen" v-model="imagen">
+      <img width="100" :src="imagen" alt="">
+      </div>
+      <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+      </form>
+      
+      </div>
+      </main>
+      <footer>  
+        <div class="footer-caja">
+       <div class="foot-container">
+        <div class="foot">
+          <h3>Quiénes somos</h3>        
+            <p><a href="#">Sobre nosotros</a></p>
+        </div>
+        <div class="foot2">
+          <h3>Info que te interesa</h3>    
+            <p><a href="#">Políticas de devoluciones</a></p>
+            <p><a href="#">Sobre nuestros envíos</a></p>   
+            <p><a href="#">Trabajá con nosotros</a></p>
+          </div>       
+       </div>
+       <div class="redes">
+        <h3>Seguinos en nuestras redes</h3>  
+            <section class="redesbutton">
+              <a href="">
+              <i class='bx bxl-facebook-circle'></i>
+            </a>   
+            <a href="">
+              <i class='bx bxl-instagram' ></i>
+            </a>    
+            </section>
+       </div>
+       <div class="footer-image"><img class="imagenfooter" src="/assets/imagen footer.png"></div>  
+      </div>
+       <div class="copy">
+          <p> 2023 © | Mascota Food</p><p>Desarrollado por Estudiantes de "Codo a Codo"</p>
+          </div>    
+      </footer>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="editarproducto.js"></script>
+  </body>
+</html>

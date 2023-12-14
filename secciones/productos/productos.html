@@ -105,19 +105,19 @@
             />
           </figure>
           <div class="info-product" >
-            <h1>{{producto.id}}</h1>
+            <h1>Id: {{producto.id}}</h1>
             <h3>{{producto.nombre}}</h3>
             <p class="price">${{producto.precio}}</p>
             <p class="stock">Stock: {{producto.stock}}</p>
             <button class="agregar-al-carrito"  @click="agregarAlCarrito(producto)">
               Añadir al carrito
             </button>
-            <a><button class="editar-producto">
+            <a :href="'editarproducto.html?id=' + producto.id"><button class="editar-producto">
              Editar <img src="/assets/editar.png" width="20px" height="20px">
             </button></a>
-            <a><button class="eliminar-producto">
+            <button class="eliminar-producto" v-on:click="eliminar(producto.id)">
               Eliminar <img src="/assets/boton-eliminar.png" width="20px" height="20px">
-            </button></a>           
+            </button>          
           </div>
         </div>
       </div>
